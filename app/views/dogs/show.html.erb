@@ -1,0 +1,11 @@
+<div><h2>Dog </h2></div>
+<p><%= @dog.name %></p>
+
+<div><h2>Details</h2></div>
+<p><%= @dog.breed %></p>
+<p><%= @dog.age %></p>
+
+<div><h2>Employees Connected To:</h2></div>
+<%Employee.all.select{|employee|employee.dog_id==@dog.id}.map{|employee|%>
+<div><%=link_to employee.first_name, employee_path(employee)%></div>
+<%}%>
