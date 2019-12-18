@@ -13,7 +13,8 @@ for you to be able to run `rake db:seed`. Every employee can only be connected t
 - The Employee show page should list all of their attributes (and as a bonus, try to get their picture to show up!)
 
 As a user, I should be able to create AND edit an Employee, and only be able to select 1 dog from a list of already existing dogs.
+**drop down selection**
 
-No one at Dunder Mifflin can have the same alias and/or job title (Dwight made up that rule!)
+No one at Dunder Mifflin can have the same alias and/or job title (Dwight made up that rule!) **uniquness validation**
 
-BONUS: Make an option to sort the dogs on the index page by the number of employees that belong to them.
+BONUS: Make an option to sort the dogs on the index page by the number of employees that belong to them. ** if sort by no of employees chosen then  place list in array and use count 

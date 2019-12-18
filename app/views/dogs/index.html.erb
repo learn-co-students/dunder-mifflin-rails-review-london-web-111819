@@ -1,0 +1,7 @@
+<h1>Say Hello to Our Dogs!</h1>
+
+<% @dogs.each do |dog| %>
+    <%= "#{dog.name} says Hello!" %><br>
+    <%= link_to "Find out more about #{dog.name}", dog %><br>
+    <br>
+<% end %>

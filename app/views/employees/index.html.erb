@@ -1,0 +1,7 @@
+<h1>Say Hello to Our Employees!</h1>
+
+<% @employees.each do |employee| %>
+    <%= "Hi I'm #{employee.first_name}!" %><br>
+    <%= link_to "Find out more about me", employee %><br>
+    <br>
+<% end %>
