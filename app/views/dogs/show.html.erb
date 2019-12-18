@@ -1,0 +1,14 @@
+<h1>Hi! I'm <%= @dog.name %></h1><br>
+<h2>Here's what you need to know about me! </h2>
+
+<p> I'm a <%= @dog.breed %> and I'm <%= @dog.age%>! </p>
+
+<p>These are the employees that take care of me: </p>
+
+<ol>
+<% @dog.employees.each do |employee| %>
+    <li>
+    <%= employee.first_name + " " + employee.last_name   %> <br>
+    </li>
+<% end %>
+</ol>
