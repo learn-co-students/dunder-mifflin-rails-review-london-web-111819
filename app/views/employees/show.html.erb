@@ -1,0 +1,10 @@
+<h1>Name: <%= @employee.to_s %></h1>
+<h2>Alias: <%= @employee.alias %></h2>
+<h2>Title: <%= @employee.title %></h2>
+<h2>Office: <%= @employee.office %></h2>
+<h2>Image URL: <%= @employee.img_url %></h2>
+<%= image_tag @employee.img_url %>
+<h2>Owns Dog: <%= @employee.dog_id %></h2>
+
+<%= link_to('Edit Employee', edit_employee_path) %>
+<%= link_to "Delete Employee", employee_path(@employee.id), method: :delete, data: {confirm: "Are you sure you want to delete?"} %>
